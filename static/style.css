@@ -1,0 +1,231 @@
+body{
+    background-color: #d1aaaa;
+    width: 1440px;
+    height: 1024px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+.title{
+    position: absolute;
+    left: 240px;
+    top: 40px;
+    color:#4C0000;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Rectangle text*/
+.right-text{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    align-items: center;
+}
+
+.encryptText{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 336px;
+    height: 780px;
+    color:#4C0000;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    border: none;
+    resize: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Rectangle doll */
+.right-doll{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.doll{
+    position: relative;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 283px;
+}
+
+.dollTitle{
+    color: #343A40;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.dollText{
+    color:#495057;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.dollFrame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 619px;
+}
+
+.insert-text{
+    position: absolute;
+    width: 655px;
+    height: 655px;
+    left: 240px;
+    top: 150px;
+    resize: none;
+    color:#4C0000;
+    border: none;
+    background: none;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+}
+
+.insert-text::placeholder{
+    color:#975454
+}
+
+.vector{
+    position: absolute;
+    left: 240px;
+    top: 851px;
+}
+
+.advertisement{
+    position: absolute;
+    left: 264px;
+    top: 851px;
+    color: #400000;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Buttons */
+.encryptBtn{
+    position:absolute;
+    width: 328px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    background: #8C0000;
+    border-radius: 40px;
+    border: 1px solid #CC0000;
+    padding: 24px;
+    gap: 8px;
+    cursor: pointer;
+    /* letter */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.decryptBtn{
+    position:absolute;
+    width: 328px;
+    height: 67px;
+    left: 592px;
+    top: 885px;
+    background: #FFFFFF;
+    border: 1px solid #CC0000;
+    border-radius: 40px;
+    cursor: pointer;
+    /* letter */
+    color:#8C0000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.copyBtn{
+    /*position*/
+    position:relative;
+    box-sizing: border-box;
+    top: 845px;
+    left: 32px;
+    /* size */
+    width: 336px;
+    height: 67px;
+    background: #FFFFFF;
+    border: 1px solid #CC0000;
+    border-radius: 40px;
+    cursor: pointer;
+    /* letter */
+    color:#8C0000;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+	padding: 30px 0 10px 0;
+	background-color: #330000;
+}
+
+.madeBy{
+    padding: 0 30px;
+	color: #555;
+}
