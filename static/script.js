@@ -52,7 +52,7 @@ function copy(){
     var content = document.querySelector("#encryptText");
     content.select();
     document.execCommand("copy");
-    alert("se copió");
+    alert("Texto Copiado!");
 }
  
 
