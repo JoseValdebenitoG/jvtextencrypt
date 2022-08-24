@@ -1,38 +1,40 @@
 body{
     background-color: #d1aaaa;
-    width: 1440px;
-    height: 1024px;
 }
 
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+.caja{
+    width: 940px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
 }
-.title{
-    position: absolute;
-    left: 240px;
-    top: 40px;
+
+.caja h1{
+    text-align: left;
     color:#4C0000;
     font-size: 50px;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
+    padding: 20px 0 0;
 }
+
+.logojv{ 
+    width: 200px;
+    height: 70px;
+    position: inherit;
+    margin: auto;
+    padding: 20px 0 0 0;
+    display: block;
+}
+
 
 /* Rectangle text*/
 .right-text{
     position: absolute;
     width: 400px;
-    height: 944px;
+    height: 600px;
     left: 1000px;
-    top: 40px;
+    top: 110px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -44,7 +46,7 @@ body{
     top: 32px;
     left: 32px;
     width: 336px;
-    height: 780px;
+    height: 450px;
     color:#4C0000;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -64,20 +66,20 @@ body{
 .right-doll{
     position: absolute;
     width: 400px;
-    height: 944px;
+    height: 600px;
     left: 1000px;
-    top: 40px;
+    top: 110px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
 .doll{
-    position: relative;
+    position: inherit;
     width: 336px;
     height: 304px;
     left: 32px;
-    top: 283px;
+    top: 40px;
 }
 
 .dollTitle{
@@ -114,19 +116,19 @@ body{
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    position: absolute;
+    position: inherit;
     width: 336px;
     height: 122px;
     left: 32px;
-    top: 619px;
+    top: 360px;
 }
 
 .insert-text{
     position: absolute;
-    width: 655px;
-    height: 655px;
+    width: 600px;
+    height: 400px;
     left: 240px;
-    top: 150px;
+    top: 200px;
     resize: none;
     color:#4C0000;
     border: none;
@@ -144,13 +146,13 @@ body{
 .vector{
     position: absolute;
     left: 240px;
-    top: 851px;
+    top: 620px;
 }
 
 .advertisement{
     position: absolute;
     left: 264px;
-    top: 851px;
+    top: 620px;
     color: #400000;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -160,7 +162,7 @@ body{
     width: 328px;
     height: 67px;
     left: 240px;
-    top: 885px;
+    top: 650px;
     background: #8C0000;
     border-radius: 40px;
     border: 1px solid #CC0000;
@@ -181,7 +183,7 @@ body{
     width: 328px;
     height: 67px;
     left: 592px;
-    top: 885px;
+    top: 650px;
     background: #FFFFFF;
     border: 1px solid #CC0000;
     border-radius: 40px;
@@ -197,9 +199,9 @@ body{
 
 .copyBtn{
     /*position*/
-    position:relative;
+    position:inherit;
     box-sizing: border-box;
-    top: 845px;
+    top: 500px;
     left: 32px;
     /* size */
     width: 336px;
@@ -219,9 +221,9 @@ body{
 
 .footer {
     position: absolute;
-    top: 1000px;
-    width: 120%;
-	padding: 30px 0 10px 0;
+    top: 750px;
+    width: 100%;
+	padding: 20px 0 10px 0;
 	background-color: #330000;
 }
 
