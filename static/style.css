@@ -247,15 +247,19 @@ footer {
     }
     .caja, main{
         display: block;
-        width: auto;
+        width: 100%;
         margin: 0 auto;
     }
     .caja h1{
         display: inline;
         margin: 0;
     }
-    .left, .right{
+    .left, .right, .insert-text, .right-doll{
         float: none;
+        width: 100%;
         margin: 0 auto;
+    }
+    .doll{
+        margin: 30px auto;
     }
 }
