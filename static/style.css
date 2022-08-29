@@ -254,10 +254,13 @@ footer {
         display: inline;
         margin: 0;
     }
-    .left, .right, .insert-text, .right-doll{
+    .left, .right{
         float: none;
-        width: 100%;
+        width: 96%;
         margin: 0 auto;
+    }
+    .insert-text, .right-doll{
+        width: 100%;
     }
     .doll{
         margin: 30px auto;
