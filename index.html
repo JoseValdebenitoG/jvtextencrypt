@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
         <title>Encriptador de texto JV</title>
         <link rel="shortcut icon" href="static/logojv.ico" mce_href="static/logojv.ico" type="image/x-icon">
         <link rel="stylesheet" href="static/reset.css">
@@ -11,36 +12,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+
         <header>
             <div class="caja">
-                
-                <img src="static/logojv.png" class="logojv" alt="logo jotauve">
-                <h1><img src="static/Logo.png" alt="logo alura">Encirptador de Texto</h1>
+                <img src="static/Logo.png" class="logoa" alt="logo alura">
+                <h1>Encriptador de Texto</h1>
             </div>
         </header>
-        <div class="left">
-            <textarea type="text" class="insert-text" id="insert-text" placeholder="Ingrese texto aquí" autofocus></textarea>
-            <img src="static/Vector.png" class="vector">
-            <p class="advertisement">Solo letras minúsculas y sin acentos</p>
-            <button type="button" class="encryptBtn" onclick="encrypt()" > Encriptar </button>
-            <button class="decryptBtn" onclick="decrypt()">Desencriptar</button>
-        </div>
-        <div class="right-doll" id="right-doll">
-            <img src="static/doll.png" class="doll">
-            <div class="dollFrame">
-                <h2 class="dollTitle">Ningun mensaje fue encontrado</h2>
-                <p class="dollText">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-        </div> 
-        <div class="right-text" id = "right-text">
-            <textarea class="encryptText" id="encryptText"></textarea>
-            <button class="copyBtn" onclick="copy()">Copiar</button>
-        </div>
-        <div class="footer">
-            <div class="madeBy">
-                <p>© Made with ❤️  by José Valdebenito</p>
-            </div>
-        </div>
+
+        <main>
+            <section class="left">
+                <textarea type="text" class="insert-text" id="insert-text" placeholder="Ingrese texto aquí" autofocus></textarea>
+                <img src="static/Vector.png" class="vector">
+                <p class="advertisement">Solo letras minúsculas y sin acentos</p>
+                <button type="button" class="encryptBtn" onclick="encrypt()" > Encriptar </button>
+                <button class="decryptBtn" onclick="decrypt()">Desencriptar</button>
+            </section>
+
+            <section class="right">
+                <div class="right-doll" id="right-doll">
+                    <img src="static/doll.png" class="doll">
+                    <div class="dollLegend">
+                        <h2 class="dollTitle">Ningun mensaje fue encontrado</h2>
+                        <p class="dollText">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div> 
+                <div class="right-text" id = "right-text">
+                    <textarea class="encryptText" id="encryptText"></textarea>
+                    <button class="copyBtn" onclick="copy()">Copiar</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <img src="static/logojv.png" class="logojv" alt="logo jotauve">
+            <p class="copyright">© Made with ❤️  by José Valdebenito</p>
+        </footer>
         <script src="static/script.js"></script>
     </body>
 </html>

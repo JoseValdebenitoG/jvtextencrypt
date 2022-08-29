@@ -32,6 +32,7 @@ function encrypt(){
     document.getElementById("right-doll").style.display = "none";
     document.getElementById("right-text").style.display = "block";
     document.getElementById("encryptText").innerHTML = encodeText;
+    document.getElementById("insert-text").value= "";
 }
 
 function decrypt(){
@@ -55,6 +56,3 @@ function copy(){
     alert("Texto Copiado!");
 }
  
-
- 
-    

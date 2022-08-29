@@ -1,52 +1,89 @@
+html, body {
+    min-height: 100%;
+}
 body{
-    background-color: #d1aaaa;
+    background-color: #FFBFB0;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #a44a4a;
+    padding: 25px 0;
 }
 
 .caja{
     width: 940px;
-    height: 150px;
     position: relative;
     margin: 0 auto;
+    text-align: center;
 }
 
 .caja h1{
-    text-align: left;
+    display: inline-block;
     color:#4C0000;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 2.5em;
+    font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
-    padding: 20px 0 0;
+    margin: 0 0 0 45px;
 }
 
-.logojv{ 
-    width: 200px;
-    height: 70px;
+.logoa{
     position: inherit;
-    margin: auto;
-    padding: 20px 0 0 0;
-    display: block;
+    float: inline-start;
+    padding: 0 20px 0 20px;
+    height: 50px;
 }
 
+
+main{
+    width: 940px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.right{
+    float: right; 
+    margin: 25px 0 0 0;
+    width: 400px;
+    height: 560px;
+    background-color: #111111;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px #4C0000;
+}
+
+.left{
+    float: left; 
+    padding: 25px 0 0 0;
+    width: 400px;
+    height: 560px;
+}
+
+.right-doll{
+    position: inherit;
+    padding: 25px 0 0 0;
+    width: 400px;
+    height: 560px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px #4C0000;
+}
 
 /* Rectangle text*/
+
 .right-text{
-    position: absolute;
+    display: inline-block;
+    padding: 25px 0 0 0;
     width: 400px;
-    height: 600px;
-    left: 1000px;
-    top: 110px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    align-items: center;
+    height: 560px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px #4C0000;
 }
 
 .encryptText{
-    position: absolute;
-    top: 32px;
-    left: 32px;
+    position: inherit;
+    padding: 0 30px 50px;
     width: 336px;
-    height: 450px;
+    height: 400px;
     color:#4C0000;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -56,79 +93,51 @@ body{
     text-align: left;
     border: none;
     resize: none;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-/* Rectangle doll */
-.right-doll{
-    position: absolute;
-    width: 400px;
-    height: 600px;
-    left: 1000px;
-    top: 110px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
 }
 
 .doll{
     position: inherit;
     width: 336px;
     height: 304px;
-    left: 32px;
-    top: 40px;
+    margin: 32px;
+}
+
+.dollLegend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: inherit;
+    width: 336px;
+    height: 122px;
+    margin: 0 auto;
 }
 
 .dollTitle{
-    color: #343A40;
+    color: #4C0000;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
     text-align: center;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .dollText{
-    color:#495057;
+    color:#4C0000;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
     text-align: center;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+    padding: 20px 0;
 }
 
-.dollFrame{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    position: inherit;
-    width: 336px;
-    height: 122px;
-    left: 32px;
-    top: 360px;
-}
 
 .insert-text{
-    position: absolute;
-    width: 600px;
+    display: inline-block;
+    position: inherit;
+    padding:25px 0 0 0;
+    width: 400px;
     height: 400px;
-    left: 240px;
-    top: 200px;
     resize: none;
     color:#4C0000;
     border: none;
@@ -137,6 +146,7 @@ body{
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
+    border: 1px solid #330000;
 }
 
 .insert-text::placeholder{
@@ -144,24 +154,24 @@ body{
 }
 
 .vector{
-    position: absolute;
-    left: 240px;
-    top: 620px;
+    position: inherit;
+    padding: 15px 0 0;
 }
 
 .advertisement{
-    position: absolute;
-    left: 264px;
-    top: 620px;
+    display: inline-block;
+    position: inherit;
+    padding: 15px 0 15px 10px;
     color: #400000;
     font-family: 'Ubuntu', sans-serif;
 }
 /* Buttons */
 .encryptBtn{
-    position:absolute;
-    width: 328px;
+    position:inherit;
+    float: left;
+    width: 180px;
     height: 67px;
-    left: 240px;
+    left: 200px;
     top: 650px;
     background: #8C0000;
     border-radius: 40px;
@@ -173,17 +183,16 @@ body{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     text-align: center;
 }
 
 .decryptBtn{
-    position:absolute;
-    width: 328px;
+    position:inherit;
+    float:right;
+    width: 180px;
     height: 67px;
-    left: 592px;
-    top: 650px;
     background: #FFFFFF;
     border: 1px solid #CC0000;
     border-radius: 40px;
@@ -201,8 +210,7 @@ body{
     /*position*/
     position:inherit;
     box-sizing: border-box;
-    top: 500px;
-    left: 32px;
+    margin: 0 30px;
     /* size */
     width: 336px;
     height: 67px;
@@ -219,16 +227,35 @@ body{
     text-align: center;
 }
 
-.footer {
-    position: absolute;
-    top: 750px;
-    width: 100%;
-	padding: 20px 0 10px 0;
-	background-color: #330000;
+footer {
+    background-color: #330000;
+    padding: 40px;
+    text-align: center;
 }
 
-.madeBy{
-    padding: 20px 30px;
+.copyright{
     color: #555;
     font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+}
+
+/* CELULARES */
+@media screen and (max-width: 480px){
+    main{
+        min-height:1220px;
+        padding-bottom: 20px;
+    }
+    .caja, main{
+        display: block;
+        width: auto;
+        margin: 0 auto;
+    }
+    .caja h1{
+        display: inline;
+        margin: 0;
+    }
+    .left, .right{
+        float: none;
+        margin: 0 auto;
+    }
 }
