@@ -45,9 +45,8 @@ main{
     margin: 25px 0 0 0;
     width: 400px;
     height: 560px;
-    background-color: #111111;
+    background-color: none;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px 5px #4C0000;
 }
 
 .left{
@@ -254,15 +253,66 @@ footer {
         display: inline;
         margin: 0;
     }
+    .encryptBtn, .decryptBtn{
+        width: 45%;
+    }
     .left, .right{
         float: none;
-        width: 96%;
-        margin: 0 auto;
+        width: auto;
+        margin: 20px auto;
+        padding: 0 10px;
     }
-    .insert-text, .right-doll{
+    .insert-text, .right-doll, .right-text{
         width: 100%;
     }
     .doll{
         margin: 30px auto;
     }
+    .encryptText{
+        width: auto;
+        margin: 0 auto;
+        display: inherit;
+        padding: 0;
+    }
+    .copyBtn{
+        display: inherit;
+        margin: 40px auto;
+    }
+
+}
+/* TABLET */
+@media screen and (min-width:480px) and (max-width: 1024px) {
+    main{
+        width: auto;
+        margin: 0 auto;
+    }
+    .left, .right{
+        width: 380px;
+        display: inherit;
+        
+    }
+    .left{
+        padding: 25px 0 0 15px;
+    }
+    .right{
+        margin: 0;
+        padding: 25px 15px 0 0;
+    }
+    .right-text{
+        padding: 5px;
+    }
+    .encryptText{
+        padding: 0;
+        width: 350px;
+        display: inherit;
+        margin: 0 auto;
+    }
+    .insert-text, .right-text{
+        width: 378px;
+    }
+    .copyBtn{
+        margin: 65px auto;
+        display: inherit;
+    }
+
 }
