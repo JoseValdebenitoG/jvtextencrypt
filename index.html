@@ -2,51 +2,54 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
         <title>Encriptador de texto JV</title>
         <link rel="shortcut icon" href="static/logojv.ico" mce_href="static/logojv.ico" type="image/x-icon">
         <link rel="stylesheet" href="static/reset.css">
-        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/stylegrid.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="gridContainer">
 
-        <header>
+        <header class="header">
             <div class="caja">
                 <img src="static/Logo.png" class="logoa" alt="logo alura">
                 <h1>Encriptador de Texto</h1>
             </div>
         </header>
 
-        <main>
-            <section class="left">
-                <textarea type="text" class="insert-text" id="insert-text" placeholder="Ingrese texto aquí" autofocus></textarea>
-                <img src="static/Vector.png" class="vector">
-                <p class="advertisement">Solo letras minúsculas y sin acentos</p>
-                <button type="button" class="encryptBtn" onclick="encrypt()" > Encriptar </button>
-                <button class="decryptBtn" onclick="decrypt()">Desencriptar</button>
-            </section>
+        <section class="left-side">
+            <textarea type="text" class="insert-text" id="insert-text" placeholder="Ingrese texto aquí" autofocus></textarea>
+            <img src="static/Vector.png" class="vector">
+            <p class="advertisement">Solo letras minúsculas y sin acentos</p>
+            <button type="button" class="encryptBtn" onclick="encrypt()" > Encriptar </button>
+            <button class="decryptBtn" onclick="decrypt()">Desencriptar</button>
+        </section>
 
-            <section class="right">
-                <div class="right-doll" id="right-doll">
-                    <img src="static/doll.png" class="doll">
-                    <div class="dollLegend">
-                        <h2 class="dollTitle">Ningun mensaje fue encontrado</h2>
-                        <p class="dollText">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                </div> 
-                <div class="right-text" id = "right-text">
-                    <textarea class="encryptText" id="encryptText"></textarea>
-                    <button class="copyBtn" onclick="copy()">Copiar</button>
+        <section class="right-side">
+            <div class="right-doll" id="right-doll">
+                <img src="static/doll.png" class="doll">
+                <div class="dollLegend">
+                    <h2 class="dollTitle">Ningun mensaje fue encontrado</h2>
+                    <p class="dollText">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-            </section>
+            </div> 
+            <div class="right-text" id = "right-text">
+                <textarea class="encryptText" id="encryptText"></textarea>
+                <button class="copyBtn" onclick="copy()">Copiar</button>
+            </div>
+        </section>
 
-        </main>
-
-        <footer>
+        <footer class="footer">
             <img src="static/logojv.png" class="logojv" alt="logo jotauve">
+            <div>
+                <a target='_blank' href='https://twitter.com/JValdebenitoG'><img class='social' width=40 src="static/twitter.png" /></a>
+				<a target='_blank' href='https://www.instagram.com/jotauve.dev/'><img class='social' width=40 src="static/instagram.png" /></a>
+				<a target='_blank' href='https://github.com/josevaldebenitog'><img class='social' width=40 src="static/github.png" /></a>
+				<a target='_blank' href='https://www.linkedin.com/in/jvaldebenitog/'><img class='social' width=40 src="static/linkedin.png" /></a>
+            </div>
             <p class="copyright">© Made with ❤️  by José Valdebenito</p>
         </footer>
         <script src="static/script.js"></script>

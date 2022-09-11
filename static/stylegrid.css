@@ -1,0 +1,206 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #FFBFB0;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100%;
+}
+.gridContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header"
+        "left-side"
+        "right-side"
+        "footer";
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-color: #a44a4a;
+    top: 0;
+}
+.header h1{
+    display: inline-block;
+    color: #4C0000;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 20px 5px;
+}
+.logoa{
+    position: inherit;
+    padding: 20px 0 0 20px;
+    height: 30px;
+}
+
+.left-side{
+    grid-area: left-side;
+    background-color: none;
+}
+.insert-text{
+    display: block;
+    padding: 20px 15px 0 15px;
+    margin: 20px auto;
+    width: 85%;
+    height: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: #8C0000;
+    resize: none;
+    border: 1px solid #CC0000;
+    border-radius: 10px;
+}
+.insert-text::placeholder{
+    color: #975454;
+}
+.vector{
+    display: inline-block;
+    position: inherit;
+    padding: 0 0 0 25px;
+}
+.advertisement{
+    display: inline-block;
+    color: #333;
+    position:inherit;
+    padding: 0 0 0 10px;
+}
+.encryptBtn{
+    display: inline;
+    position:inherit;
+    width: 40%;
+    height: 55px;
+    margin-top: 20px;
+    background-color: #8C0000;
+    border:1px solid #CC0000;
+    border-radius: 25px;
+    cursor:pointer;
+    /* letter */
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+.decryptBtn{
+    display: inline;
+    position: inherit;
+    width: 40%;
+    height: 55px;
+    background-color: #FFFFFF;
+    border: 2px solid #CC0000;
+    border-radius: 25px;
+    cursor: pointer;
+    /* letter */
+    color:#8C0000;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+.right-side{
+    grid-area: right-side;
+    background-color: none;
+}
+.right-doll{
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 400px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 20px auto;
+    border: 1px solid #CC0000;
+    border-radius: 10px;
+}
+.dollTitle{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.dollText{
+    padding-top: 20px;
+    font-style: italic;
+}
+.right-text{
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 400px;
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 20px auto;
+    border: 1px solid #CC0000;
+    border-radius: 10px;
+}
+.encryptText{
+    padding: 20px 10px;
+    width: 90%;
+    height: 70%;
+    border: none;
+    resize: none;
+    /* letter */
+    font-family: 'Ubuntu' sans-serif;
+    color: #8C0000;
+    font-size: 1.2rem;
+}
+.copyBtn{
+    display: inline;
+    position: inherit;
+    margin-top: 15px;
+    width: 90%;
+    height: 55px;
+    background-color: #FFFFFF;
+    border: 2px solid #CC0000;
+    border-radius: 25px;
+    cursor: pointer;
+    /* letter */
+    color:#8C0000;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+/* FOOTER  */
+.footer{
+    grid-area: footer;
+    background-color: #111;
+    padding: 40px;
+    bottom: 0;
+}
+.logojv{
+    margin-bottom: 20px;
+}
+.social{
+    background-color: #FFF;
+    padding: 5px;
+    border-radius: 15px;
+}
+.copyright{
+    color: #555;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* TABLET */
+@media screen and (min-width: 600px){
+    .gridContainer{
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 90px auto 220px;
+        grid-template-areas: 
+        "header header"
+        "left-side right-side"
+        "footer footer";
+    }
+    .right-doll{
+        height: 85%;
+    }
+    .doll{
+        width: 80%;
+    }
+    .advertisement{
+        display: block;
+        position: inherit;
+    }
+    .encryptBtn, .decryptBtn{
+        display: inline-block;
+        margin: 20px 10px;
+    }
+    .footer{
+        bottom: 0%;
+    }
+}
